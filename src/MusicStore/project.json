@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
     "name": "MusicStore",
     "authors": [
         "Microsoft"
@@ -28,4 +29,35 @@
         "net45": {},
         "k10": {}
     }
+=======
+	"name": "MusicStore",
+	"authors": [
+		"Microsoft"
+	],
+	"description": "Music store application on K",
+	"version": "0.1-alpha-*",
+	"dependencies": {
+		"Helios": "0.1-alpha-build-0585",
+		"Microsoft.AspNet.Mvc": "0.1-alpha-build-1268",
+		"Microsoft.AspNet.Server.WebListener": "0.1-alpha-build-0520",
+		"Microsoft.AspNet.Diagnostics": "0.1-alpha-build-0682",
+		"Microsoft.AspNet.Identity.Entity": "0.1-alpha-build-1059",
+		"Microsoft.AspNet.Identity.Security": "0.1-alpha-build-1059",
+		"Microsoft.AspNet.Security.Cookies": "0.1-alpha-build-0506",
+		"Microsoft.AspNet.StaticFiles": "0.1-alpha-build-0443",
+		"Microsoft.Data.Entity.SqlServer": "0.1-alpha-build-0863",
+		"Microsoft.Framework.ConfigurationModel.Json": "0.1-alpha-build-0233"
+		, "Nowin.vNext": ""
+   },
+	"commands": {
+		"web": "Microsoft.AspNet.Hosting server=Microsoft.AspNet.Server.WebListener server.urls=http://localhost:5002",
+		"run": "run server.urls=http://localhost:5003"
+		, "web-nowin": "Microsoft.AspNet.Hosting --server Nowin.vNext"
+		, "web-firefly": "Microsoft.AspNet.Hosting --server Firefly"
+	},
+	"configurations": {
+		"net45": {},
+		"k10": {}
+	}
+>>>>>>> 55ca93911396f9108377e49f3ecf2b067a532c49
 }
