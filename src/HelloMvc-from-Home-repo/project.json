@@ -1,0 +1,25 @@
+{
+  "version": "0.1-alpha-*",
+  "dependencies": {
+    "Microsoft.AspNet.Diagnostics": "0.1-alpha-*",
+    "Microsoft.AspNet.Hosting": "0.1-alpha-*",
+    "Microsoft.AspNet.Mvc": "0.1-alpha-*",
+    "Microsoft.AspNet.StaticFiles": "0.1-alpha-*",
+    "Microsoft.AspNet.Server.WebListener": "0.1-alpha-*"
+    , "Nowin.vNext": ""
+  },
+  "commands": {
+    "web": "Microsoft.AspNet.Hosting server=Microsoft.AspNet.Server.WebListener server.urls=http://localhost:5001"
+   ,  "web1": "Microsoft.AspNet.Hosting server=Microsoft.AspNet.Server.WebListener"
+   ,  "web2": "Microsoft.AspNet.Hosting --server Nowin.vNext"
+  },
+  "configurations": {
+    "net45": {
+      "dependencies": {
+        "System.Runtime": "",
+        "System.ComponentModel.DataAnnotations": ""
+      }
+    },
+    "k10": {}
+  }
+}
