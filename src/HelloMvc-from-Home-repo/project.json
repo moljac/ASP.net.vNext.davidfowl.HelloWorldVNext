@@ -1,25 +1,32 @@
 {
-  "version": "0.1-alpha-*",
+  "authors": [
+	"Microsoft"
+  ],
+  "description": "MVC ",
+  "version": "1.0.0-*",
   "dependencies": {
-    "Microsoft.AspNet.Diagnostics": "0.1-alpha-*",
-    "Microsoft.AspNet.Hosting": "0.1-alpha-*",
-    "Microsoft.AspNet.Mvc": "0.1-alpha-*",
-    "Microsoft.AspNet.StaticFiles": "0.1-alpha-*",
-    "Microsoft.AspNet.Server.WebListener": "0.1-alpha-*"
-    , "Nowin.vNext": ""
-  },
+		"Microsoft.AspNet.Mvc": "6.0.0-*",
+		"Microsoft.AspNet.Server.WebListener": "1.0.0-*",
+		"Microsoft.AspNet.Diagnostics": "1.0.0-*",
+		"Microsoft.AspNet.Security.Cookies": "1.0.0-*",
+		"Microsoft.AspNet.StaticFiles": "1.0.0-*",
+		"Microsoft.Framework.ConfigurationModel.Json": "1.0.0-*",
+		"Microsoft.Framework.OptionsModel": "1.0.0-*",
+		"Microsoft.AspNet.SignalR.Server": "3.0.0-*"
+	 ,	"Nowin.vNext": ""
+		},
   "commands": {
-    "web": "Microsoft.AspNet.Hosting server=Microsoft.AspNet.Server.WebListener server.urls=http://localhost:5001"
+	"web": "Microsoft.AspNet.Hosting server=Microsoft.AspNet.Server.WebListener server.urls=http://localhost:5001"
    ,  "web1": "Microsoft.AspNet.Hosting server=Microsoft.AspNet.Server.WebListener"
    ,  "web2": "Microsoft.AspNet.Hosting --server Nowin.vNext"
   },
   "configurations": {
-    "net45": {
-      "dependencies": {
-        "System.Runtime": "",
-        "System.ComponentModel.DataAnnotations": ""
-      }
-    },
-    "k10": {}
+	"net45": {
+	  "dependencies": {
+		"System.Runtime": "",
+		"System.ComponentModel.DataAnnotations": ""
+	  }
+	},
+	"k10": {}
   }
 }

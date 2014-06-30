@@ -10,7 +10,7 @@ namespace MvcSample.Web
             return View(User());
         }
 
-        public User User()
+        public new User User()
         {
             User user = new User()
             {
