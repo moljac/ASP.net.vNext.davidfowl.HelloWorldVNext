@@ -8,8 +8,9 @@
     "Nowin.vNext": ""
   },
   "commands": {
-    "web": "Microsoft.AspNet.Hosting server=Microsoft.AspNet.Server.WebListener server.urls=http://localhost:5001",
-    "web-nowin": "Microsoft.AspNet.Hosting --server Nowin.vNext"
+    "web": "Microsoft.AspNet.Hosting server=Microsoft.AspNet.Server.WebListener server.urls=http://localhost:5001"
+		, "web-nowin": "Microsoft.AspNet.Hosting --server Nowin.vNext"
+        , "web-firefly": "Microsoft.AspNet.Hosting --server Firefly"
   },
   "configurations": {
     "net45": {},
