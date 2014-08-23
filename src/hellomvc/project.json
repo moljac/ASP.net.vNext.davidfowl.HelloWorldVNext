@@ -1,10 +1,16 @@
 {
-    "dependencies": {
-        "Microsoft.AspNet.Mvc": "0.1-alpha-*",
-        "Nowin.vNext": ""
+    "dependencies": 
+	{
+        "Microsoft.AspNet.Mvc": "6.0.0-*",
+        "Nowin.vNext": "",
+        "Kestrel": "1.0.0-*"
     },
-    "commands": {
-        "web": "Microsoft.AspNet.Hosting --server Nowin.vNext"
-        , "web-firefly": "Microsoft.AspNet.Hosting --server Firefly"
+    "commands": 
+	{
+	
+	  "web": "Microsoft.AspNet.Hosting --server Nowin.vNext"
+	, "web-nowin": "Microsoft.AspNet.Hosting --server Nowin.vNext"
+	, "web-kestrel": "Microsoft.AspNet.Hosting --server Kestrel"
+	, "web-firefly": "Microsoft.AspNet.Hosting --server Firefly"
     }
 }

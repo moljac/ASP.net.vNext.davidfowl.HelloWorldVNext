@@ -12,7 +12,7 @@ public class Startup
             services.AddMvc();
         });
 
-        app.Use(async (context, next) => 
+        app.Use(async (context, next) =>
         {
             Console.WriteLine(context.Request.Path);
 
