@@ -4,12 +4,24 @@
 	  "Kestrel": "1.0.0-*"
 	, "Nowin.vNext": ""
 	, "Microsoft.AspNet.WebSockets.Server": "1.0.0-*"
-    },
-    "commands": 
+    }
+	,
+	"commands": 
 	{
-      "web": "Microsoft.AspNet.Hosting --server Nowin.vNext"
+	  "web": "Microsoft.AspNet.Hosting --server Nowin.vNext"
 	, "web-firefly": "Microsoft.AspNet.Hosting --server Firefly"
 	, "web-nowin": "Microsoft.AspNet.Hosting --server Nowin.vNext"
 	, "web-kestrel": "Microsoft.AspNet.Hosting --server Kestrel"
-    }
+	}
+	,
+	"scripts": 
+	{
+		"prebuild": "echo before building",
+		"postbuild": "echo after building",
+		"prepack": "echo before packing",
+		"postpack": "echo after packing",
+		"prerestore": "echo before restoring packages",
+		"postrestore": "echo after restoring packages"
+	}	
+	
 }
